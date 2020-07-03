@@ -6,10 +6,14 @@ public class Author {
     private char gender;
 
     public Author(String nameAuthor, String email, char gender) {
+        if (!(gender == 'v' || gender == 'x' || gender == 'm'))
+            throw new IllegalArgumentException("Gender must be V, M or X "+ gender);
         this.nameAuthor = nameAuthor;
         this.email = email;
         this.gender = gender;
-    }
+
+        }
+
 
     public Author() {
 

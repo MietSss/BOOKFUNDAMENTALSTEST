@@ -9,6 +9,7 @@ public class BookApp{
         jos.setEmail("josdenos@hotmails.com");
         System.out.println(jos.getEmail());
         System.out.println(jos.getGender());
+        jos.setGender('v');
         System.out.println(jos.getNameAuthor());
         jos.setNameAuthor("Jos den OOOOS");
 
